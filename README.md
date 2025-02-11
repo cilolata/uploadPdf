@@ -1,51 +1,20 @@
-# React + TypeScript + Vite
+## Objetivo: 
+- solucionar a visualização dos pdfs para webview mobiel ou um objeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Solução:
+- Baseado no projeto da equipe de dados de saúde, a estratégia adotada foi transformar o arquivo pdf em imagem. A especificdade do proejto framework é que dependendo do contexto, poderemos receber como resposta da requisição ou uma url (string),
+ou um objeto tipo dataUrl. Fiz um projeto exemplo fazendo um upload de pdf e transformando em dataUrl para depois converter em imagem.
+- utilizei 2 libs essa solução:
+ - [react-pdhttps://github.com/mozilla/pdf.jsf](https://github.com/wojtekmaj/react-pdf#readme)
+ - [pdfjs](https://github.com/mozilla/pdf.js)
 
-Currently, two official plugins are available:
+Diferenças (coloquei só o que impacta diretamente para funcionalidade que queremos): 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# uploadPdf
+REACT-PDF
+- React-pdf foi a lib utilizada no projeto que usei de referência
+- a integração com o projeto é mais simples por ter sido desenvolvida para o framework reactjs
+  
+PDF.JS:
+- Projeto mantido pela Mozilla, com uma comunidade grande e documentação extensa.
+- Mais genérico, podendo ser usado em qualquer projeto JavaScript.
+- Pode consumir mais recursos ao renderizar PDFs grandes ou complexos.
