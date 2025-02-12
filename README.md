@@ -8,7 +8,12 @@ ou um objeto tipo dataUrl. Fiz um projeto exemplo fazendo um upload de pdf e tra
  - [react-pdf](https://react-pdf.org/)
  - [pdfjs](https://github.com/mozilla/pdf.js)
 
-Diferenças (coloquei só o que impacta diretamente para funcionalidade que queremos, pois a implementação é exatamente igual, já que o **React-pdf é contruido usando o pdfJs**): 
+## Diferenças (coloquei só o que impacta diretamente para funcionalidade que queremos, pois a implementação é exatamente igual, já que o **React-pdf é contruido usando o pdfJs**): 
+
+## Podemos usar o WebWorker de duas formas:
+
+- via CDN [react-pdf](./src/reactPdf/pdfViewer.tsx)
+- via interna [pdf.js](./src/pdfjs/pdfViewerPdfJs.tsx)
 
 REACT-PDF
 - React-pdf foi a lib utilizada no projeto que usei de referência
