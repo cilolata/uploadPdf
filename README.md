@@ -1,5 +1,5 @@
 ## Objetivo: 
-- solucionar a visualização dos pdfs para webview mobile
+- solucionar a visualização de pdfs para webviews mobile
 - Para rodar o projeto teste: npm run dev
 
 ## Solução:
