@@ -12,7 +12,7 @@ Diferenças (coloquei só o que impacta diretamente para funcionalidade que quer
 
 REACT-PDF
 - React-pdf foi a lib utilizada no projeto que usei de referência
-- tem componentes que poderiam ajudar a vizualição do pdf caso fosse necessário (ex: <Document /> <Page /> )
+- tem componentes react que poderiam ajudar a visualição do pdf caso fosse necessário (vide documentação)
 
 ![](./src/assets/react-pdf.png)
 
