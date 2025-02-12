@@ -12,7 +12,7 @@ Utilizei 2 libs essa solução:
 
 ## Diferenças:
 
-**Obs: coloquei só o que impacta diretamente para funcionalidade que queremos, pois a implementação é exatamente igual, já que o React-pdf é contruido usando o pdfJs**: 
+**Obs: A implementação é exatamente igual, já que o React-pdf é contruido usando o pdfJs**: 
 
 Podemos usar o WebWorker de duas formas:
 
