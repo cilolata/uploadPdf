@@ -5,14 +5,14 @@
 - Baseado no projeto da equipe de dados de saúde, a estratégia adotada foi transformar o arquivo pdf em imagem. A especificdade do proejto framework é que dependendo do contexto, poderemos receber como resposta da requisição ou uma url (string),
 ou um objeto tipo dataUrl. Fiz um projeto exemplo fazendo um upload de pdf e transformando em dataUrl para depois converter em imagem.
 - utilizei 2 libs essa solução:
- - [react-pdhttps://github.com/mozilla/pdf.jsf](https://github.com/wojtekmaj/react-pdf#readme)
+ - [react-pdf](https://react-pdf.org/)
  - [pdfjs](https://github.com/mozilla/pdf.js)
 
-Diferenças (coloquei só o que impacta diretamente para funcionalidade que queremos): 
+Diferenças (coloquei só o que impacta diretamente para funcionalidade que queremos, pois a implementação é exatamente igual, já que o **React-pdf é contruido usando o pdfJs**): 
 
 REACT-PDF
 - React-pdf foi a lib utilizada no projeto que usei de referência
-- a integração com o projeto é mais simples por ter sido desenvolvida para o framework reactjs
+- tem componentes que poderiam ajudar a vizualição do pdf caso fosse necessário (ex: <Document /> <Page /> )
 
 ![](./src/assets/react-pdf.png)
 
