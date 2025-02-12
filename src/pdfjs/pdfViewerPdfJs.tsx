@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react"
-import * as pdfjsLib from 'pdfjs-dist'
+import * as pdfjsLib from 'pdfjs-dist';
+import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?worker';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`
+// via CDN
+// pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`
+
+pdfjsLib.GlobalWorkerOptions.workerPort = new pdfWorker();
 
 interface PdfViewerProps {
     pdfBase64: string;
