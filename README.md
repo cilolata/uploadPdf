@@ -13,8 +13,16 @@ Diferenças (coloquei só o que impacta diretamente para funcionalidade que quer
 REACT-PDF
 - React-pdf foi a lib utilizada no projeto que usei de referência
 - a integração com o projeto é mais simples por ter sido desenvolvida para o framework reactjs
+
+![](./src/assets/react-pdf.png)
+
   
 PDF.JS:
 - Projeto mantido pela Mozilla, com uma comunidade grande e documentação extensa.
 - Mais genérico, podendo ser usado em qualquer projeto JavaScript.
 - Pode consumir mais recursos ao renderizar PDFs grandes ou complexos.
+
+![](./src/assets/pdfjs.png)
+
+
+

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from 'react'
-import { PdfViewer } from './pdfViewer';
+import { useState } from 'react'
+import { PdfViewer } from './reactPdf/pdfViewer';
 
 function App() {
   const [data, setData] = useState<string>()
@@ -27,7 +27,14 @@ function App() {
         <input type="file" accept="application/pdf" onChange={upload} />
       </div>
       {data && (
-        <PdfViewer pdfBase64={data} />
+        <div style={{
+          width: '400px',
+          height: '400px',
+          marginTop: '1rem',
+        }}>
+          <p>React-Pdf</p>
+          <PdfViewer pdfBase64={data} />
+        </div>
       )}
     </>
   );
