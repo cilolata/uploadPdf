@@ -5,7 +5,7 @@
 ## Solução:
 - A estratégia adotada foi transformar o arquivo pdf em imagem. Fiz um projeto exemplo fazendo um upload de pdf e transformando em **dataUrl** para depois converter em imagem.
 
-Utilizei 2 libs essa solução:
+Utilizei 2 libs para essa solução:
 
  - [react-pdf](https://react-pdf.org/)
  - [pdfjs](https://github.com/mozilla/pdf.js)
