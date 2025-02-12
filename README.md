@@ -3,8 +3,7 @@
 - Para rodar o projeto teste: npm run dev
 
 ## Solução:
-- Baseado no projeto da equipe de dados de saúde, a estratégia adotada foi transformar o arquivo pdf em imagem. A especificdade do projeto framework é que, dependendo do contexto, poderemos receber como resposta da requisição ou uma url (string),
-ou um objeto tipo dataUrl. Fiz um projeto exemplo fazendo um upload de pdf e transformando em dataUrl para depois converter em imagem.
+- A estratégia adotada foi transformar o arquivo pdf em imagem. Fiz um projeto exemplo fazendo um upload de pdf e transformando em **dataUrl** para depois converter em imagem.
 
 Utilizei 2 libs essa solução:
 
