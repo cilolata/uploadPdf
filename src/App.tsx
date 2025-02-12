@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react'
 import { PdfViewer } from './reactPdf/pdfViewer';
+import { PdfViewerPdfJs } from './pdfjs/pdfViewerPdfJs';
 
 function App() {
   const [data, setData] = useState<string>()
@@ -22,21 +23,40 @@ function App() {
   }
 
   return (
-    <>
+    <div
+      style={{
+        width: '100%',
+        height: '100%',
+      }}>
       <div>
         <input type="file" accept="application/pdf" onChange={upload} />
       </div>
       {data && (
         <div style={{
-          width: '400px',
-          height: '400px',
-          marginTop: '1rem',
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          justifyContent: 'space-around'
         }}>
-          <p>React-Pdf</p>
-          <PdfViewer pdfBase64={data} />
+          <div style={{
+            width: '400px',
+            height: '400px',
+            marginTop: '1rem',
+          }}>
+            <p>React-Pdf</p>
+            <PdfViewer pdfBase64={data} />
+          </div>
+          <div style={{
+            width: '400px',
+            height: '400px',
+            marginTop: '1rem',
+          }}>
+            <p>PDF-Js</p>
+            <PdfViewerPdfJs pdfBase64={data} />
+          </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 
