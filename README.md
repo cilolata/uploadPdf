@@ -21,7 +21,8 @@ Podemos usar o WebWorker de duas formas:
 
 **REACT-PDF**
 - React-pdf foi a lib utilizada no projeto que usei de referência
-- tem componentes react que poderiam ajudar a visualição do pdf caso fosse necessário (vide documentação)
+- tem componentes react que poderiam ajudar a visualição do pdf caso fosse necessário (vide documentação  - [react-pdf](https://react-pdf.org/))
+
 
 ![](./src/assets/react-pdf.png)
 
