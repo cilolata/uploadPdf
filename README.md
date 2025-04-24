@@ -20,7 +20,7 @@ Podemos usar o WebWorker de duas formas:
 - via interna [pdf.js](./src/pdfjs/pdfViewerPdfJs.tsx)
 
 **REACT-PDF**
-- React-pdf foi a lib utilizada no projeto que usei de referência
+- React-pdf foi a lib utilizada no projeto que usei como referência
 - tem componentes react que poderiam ajudar a visualição do pdf caso fosse necessário (vide documentação  - [react-pdf](https://react-pdf.org/))
 
 
